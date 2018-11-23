@@ -1,5 +1,5 @@
 #include "Snack.h"
-
+#include "Global.h"
 //设置光标位置
 void Pos(int x, int y)
 {
@@ -273,7 +273,7 @@ void pause()//暂停
 	}
 }
 
-void gamecircle()//控制游戏 
+void gamecontrol()//控制游戏 
 {
 
 	Pos(64, 15);
@@ -347,7 +347,7 @@ void gamecircle()//控制游戏
 	}
 }
 
-void welcometogame()//开始界面
+void WelcomeToGame()//开始界面
 {
 	Pos(40, 12);
 
@@ -386,19 +386,13 @@ void endgame()//结束游戏
 	exit(0);
 }
 
-void gamestart()//游戏初始化
+
+//游戏初始化
+void gamestart()
 {
 	system("mode con cols=100 lines=30");
-	welcometogame();
+	WelcomeToGame();
 	creatMap();
 	initsnake();
 	createfood();
-}
-
-int main()
-{
-	gamestart();
-	gamecircle();
-	endgame();
-	return 0;
 }

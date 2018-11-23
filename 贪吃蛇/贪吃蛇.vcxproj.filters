@@ -18,9 +18,15 @@
     <ClCompile Include="Snack.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="mian.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Snack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
